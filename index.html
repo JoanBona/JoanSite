@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChampionsPlanet</title>
+
+    <!-- Link para a fonte Times New Roman (uma fonte mais formal e padrão) -->
+    <style>
+        /* Estilo para o header com a fonte Times New Roman e centralizado */
+        header {
+            font-family: 'Times New Roman', serif; /* Usando a fonte Times New Roman */
+            font-size: 5em;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+            text-align: center; /* Centraliza o texto */
+            color: #FFFFFF;
+            padding: 20px;
+            text-shadow: 
+                2px 2px 0px #fff, 
+                -2px -2px 0px #fff, 
+                2px -2px 0px #fff, 
+                -2px 2px 0px #fff;
+        }
+
+        /* Estilo do corpo */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column; /* Organiza os vídeos na vertical */
+            margin: 0;
+            background-color: #110b1e; /* Cor de fundo alterada para #110b1e */
+            color: #fff;
+            padding-top: 120px;
+            align-items: center; /* Alinha os elementos ao centro */
+        }
+
+        /* Estilo para o vídeo principal */
+        .main-video {
+            width: 100%;
+            max-width: 640px;
+            height: 360px;
+            object-fit: cover;
+            margin: 20px 0; /* Margem entre o vídeo principal e os outros vídeos */
+            transition: transform 0.3s ease; /* Suaviza o aumento ao passar o mouse */
+        }
+
+        /* Estilo para os vídeos menores */
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centraliza os vídeos menores */
+            gap: 20px;
+            width: 80%;
+            max-width: 1200px;
+            margin-bottom: 40px; /* Espaço após cada grupo de vídeos */
+        }
+
+        /* Estilo para os iframes dos vídeos menores */
+        .video-container iframe {
+            width: 45%; /* Largura de cada vídeo pequeno */
+            height: 250px; /* Altura fixa para os vídeos menores */
+            object-fit: cover;
+            margin-bottom: 20px; /* Espaço entre os vídeos dentro da linha */
+            transition: transform 0.3s ease; /* Suaviza o aumento ao passar o mouse */
+        }
+
+        /* Efeito de aumento ao passar o mouse */
+        .video-container iframe:hover {
+            transform: scale(1.1); /* Aumenta 10% */
+        }
+
+        .main-video:hover {
+            transform: scale(1.1); /* Aumenta o vídeo principal ao passar o mouse */
+        }
+
+        /* Estilo para o texto final */
+        .footer-text {
+            font-family: 'Times New Roman', serif; /* Mesma fonte de ChampionsPlanet */
+            font-size: 2em;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 40px;
+            cursor: pointer; /* Aparece como um link clicável */
+            text-decoration: underline; /* Adiciona sublinhado ao texto */
+        }
+
+        /* Efeito ao passar o mouse sobre o texto */
+        .footer-text:hover {
+            color: #8b7dae; /* Altera a cor quando o mouse passa por cima */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        ChampionsPlanet
+    </header>
+
+    <!-- Exibe o vídeo principal abaixo de ChampionsPlanet -->
+    <iframe class="main-video" src="https://www.youtube.com/embed/8Ql77yRap-Q" title="YouTube video player" allowfullscreen></iframe>
+
+    <!-- Container para os vídeos menores -->
+    <div class="video-container">
+        <!-- Vídeos menores -->
+        <iframe src="https://www.youtube.com/embed/UA1vopxkxKc" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/k6de8dFEnSc" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/dghDh1Nnkzo" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/YdSXMMNJ8xs" title="YouTube video player" allowfullscreen></iframe>
+    </div>
+
+    <!-- Adicionando mais 2 vídeos abaixo -->
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/pQgzXq_cbqE" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/1c2HcD7VTrU" title="YouTube video player" allowfullscreen></iframe>
+    </div>
+
+    <!-- Adicionando 8 vídeos adicionais abaixo -->
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/SUXcL6lLDIw" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/y7EefcBI9uI" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/4JiX52LIEIU" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/gdu8RIN-SHk" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/hVzseodKado" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/SM7EyJcmwzQ" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Wu9gxZ6S5Ao" title="YouTube video player" allowfullscreen></iframe>
+    </div>
+
+    <!-- Texto ao final da página -->
+    <div class="footer-text" onclick="window.location.href='https://www.youtube.com/@TNTSportsBR'">
+        A melhor champions de todos os tempos, é aqui
+    </div>
+
+</body>
+</html>
